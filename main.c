@@ -50,11 +50,11 @@ float moveY = 1;
 float sumMoveX = 0;
 float sumMoveY = 0;
 
-//player 1 pad 8x2 alltid 3 från kant
+//player 1 pad 8x2 alltid 3 frÃ¥n kant
 int xP1[8][2] = {{3 , 4}, {3 , 4},{3 , 4},{3 , 4},{3 , 4},{3 , 4},{3 , 4},{3 , 4}};
 int yP1[8][2] = {{7 , 7}, {8, 8},{9 , 9}, {10, 10},{11 , 11}, {12, 12},{13 , 13}, {14, 14}};
 
-//player 2 pad 8x2 alltid 3 från kant
+//player 2 pad 8x2 alltid 3 frÃ¥n kant
 //int xP2[8][2] = {{26 , 27}, {26 , 27},{26 , 27},{26 , 27},{26 , 27},{26 , 27},{26 , 27},{26 , 27}};
 int xP2[8][2] = {{(XLIM - 4) , (XLIM - 3)}, {(XLIM - 4) , (XLIM - 3)},{(XLIM - 4) , (XLIM - 3)},{(XLIM - 4) , (XLIM - 3)},{(XLIM - 4) , (XLIM - 3)},
 				{(XLIM - 4) , (XLIM - 3)},{(XLIM - 4) , (XLIM - 3)},{(XLIM - 4) , (XLIM - 3)}};
@@ -170,7 +170,7 @@ void update_screen(void)		//prints out the Field and ball
 			displaybuff[d++] = 0;
 		b = 0;
 		j++;
-	}		//(alla nollor)0 = släkt, (alla ettor)255 = tänt
+	}		//(alla nollor)0 = slÃ¤kt, (alla ettor)255 = tÃ¤nt
 	OledUpdate(displaybuff);
 }
 
@@ -249,10 +249,6 @@ void game_delay(int ms)			//adds delay
 	}
 }
 
-/***************************************************
-	Bug när boll hamnar i mitt i hörnet. den kommer då
-	följa längs med väggen istället för att studsa
-**************************************************/
 
 void update_position()		//updates position of ball
 {
