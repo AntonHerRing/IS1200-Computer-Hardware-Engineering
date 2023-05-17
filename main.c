@@ -156,7 +156,7 @@ void update_screen(void)		//prints out the Field and ball
 			if(find_ball(j, i) == 1 || find_Player(j, i, xP1, yP1) == 1 || find_Player(j, i, xP2, yP2) == 1 || i == YLIM || i == EDGE)
 			{
 				byte[b++] = 1;
-				zero = 1;
+				zero = 1;	//set variable to 1 if byte is not only 0
 			}
 			else
 				byte[b++] = 0;
